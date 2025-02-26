@@ -1,0 +1,55 @@
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    max-width: 1210px;
+    margin: auto;
+  }
+
+
+
+  .header__menu {
+    display: flex;
+    font-family: 'Graphik Trial';
+    font-weight: 400;
+    font-style: normal;
+    gap:21px;
+  }
+
+  .header__menu-iteam{
+    margin: 0 15px; 
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .header__nav {
+      justify-content: space-between;
+    }
+    
+    .header__logo-img {
+      margin-right: auto;
+    }
+  
+    .header__menu {
+      margin-left: auto;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  
+
+  .header__menu-iteam:hover{
+    color:gray;
+  }
+
+  .header__logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__medias {
+    display: flex;
+    gap: 10px; 
+  }

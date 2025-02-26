@@ -1,0 +1,13 @@
+.features__content{
+    justify-content: center;
+    text-align: center;
+}
+
+.features__title{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: px;
+}
+

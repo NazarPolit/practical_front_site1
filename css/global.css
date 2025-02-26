@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/graphik-trial');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --primary-color: #252B42;
+    --base-color: rgb(255, 255, 255);
+    font-family: "Graphik Trial", sans-serif;
+  }
+
+img{
+  max-width: 100%;
+}
+  
+  
+body {
+  background-color: var(--base-color);
+ }
+
+ a {
+    color: var(--base-color);
+  }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 43px;
+  }
