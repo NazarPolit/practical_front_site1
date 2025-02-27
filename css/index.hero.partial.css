@@ -1,11 +1,35 @@
 .header--index {
     position: relative; /* Замість absolute/fixed */
-    background-image: url(../img/header/header-hero-backgrnd.svg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/header-bg.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     width: 100vw; 
     height: 110vh; 
+    
+}
+.header--index::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 15vh;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+/* Правий трикутний виріз */
+.header--index::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 15vh;
+    background-color: white;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
 
