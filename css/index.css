@@ -1,4 +1,6 @@
 @import "./global.css" ;
 @import "./global.header-nav.css" ;
 @import "./index.hero.partial.css" ;
+@import "./index.padding.css";
 @import "./index.features.partial.css" ;
+@import "./index.features-blocks.partial.css";

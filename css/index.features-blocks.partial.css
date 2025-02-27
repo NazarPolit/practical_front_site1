@@ -1,0 +1,52 @@
+.features-blocks {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-blocks__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .features-blocks__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+.features-blocks__item {
+    padding: 30px;
+
+}
+
+.features-blocks__icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+}
+
+.features-blocks__icon--font {
+    background: url('../img/features_blocks/kolo_kvadrat.svg') no-repeat center/contain;
+}
+
+.features-blocks__icon--data {
+    background: url('../img/features_blocks/pen.svg') no-repeat center/contain;
+}
+
+.features-blocks__icon--action {
+    background: url('../img/features_blocks/penzlik.svg') no-repeat center/contain;
+}
+
+.features-blocks__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#252B42;
+}
+
+.features-blocks__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374754;
+}

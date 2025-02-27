@@ -1,20 +1,38 @@
-.header--index{
-    background-image: url(../img/header/header-hero-backgrnd.png);
-    min-height: 100vh;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+.header--index {
+    position: relative; /* Замість absolute/fixed */
+    background-image: url(../img/header/header-hero-backgrnd.svg);
+    background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 80px;
+    width: 100vw; 
+    height: 110vh; 
 }
+
+
+.hero__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; 
+    padding: 0; 
+}
+
+
 
 .hero__title{
     color: var(--base-color);
     text-align: center;
-    padding: 10px 0px;
-    border-top: 80px;
-    border-bottom: 80px;
     font-size: 74px;
 }
+
+@media (max-width: 768px) {
+    .hero__title{
+        font-size: 48px;
+        font-weight: 400;
+    }
+  }
 
 .hero__subtitle{
     color: var(--base-color);
